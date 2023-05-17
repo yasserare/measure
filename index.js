@@ -7,7 +7,8 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 const uri =
-  "mongodb://younessanass86:nHS0wqny4Kcefau0@ac-991z5rd-shard-00-00.gs3ciat.mongodb.net:27017,ac-991z5rd-shard-00-01.gs3ciat.mongodb.net:27017,ac-991z5rd-shard-00-02.gs3ciat.mongodb.net:27017/?ssl=true&replicaSet=atlas-prw0mp-shard-0&authSource=admin&retryWrites=true&w=majority";
+ // "mongodb://younessanass86:nHS0wqny4Kcefau0@ac-991z5rd-shard-00-00.gs3ciat.mongodb.net:27017,ac-991z5rd-shard-00-01.gs3ciat.mongodb.net:27017,ac-991z5rd-shard-00-02.gs3ciat.mongodb.net:27017/?ssl=true&replicaSet=atlas-prw0mp-shard-0&authSource=admin&retryWrites=true&w=majority";
+  "mongodb+srv://vercel-admin-user:sxbNC8jBhUFzTvbw@tracker.gs3ciat.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, {
   serverApi: {
